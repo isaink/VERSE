@@ -1,6 +1,6 @@
 ### VERSE
 
-A online platform for reader users. 
+A online platform for books lovers & reader users. 
 
 An App for people who want save and read their favorites books.
 
