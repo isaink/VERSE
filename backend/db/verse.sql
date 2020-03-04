@@ -33,36 +33,22 @@ CREATE TABLE book(
     synopsis VARCHAR,
     published_date VARCHAR,
     pages VARCHAR,
-    autor_id INT REFERENCES autor(id) ON DELETE SET NULL
+    autor_id INT REFERENCES autor(id) ON DELETE SET NULL,
+    genre_id INT REFERENCES autor(id) ON DELETE SET NULL,
+    type_id INT REFERENCES type(id) ON DELETE SET NULL,
+    status VARCHAR
 );
 
 -- GENRES
 CREATE TABLE genres(
     id SERIAL PRIMARY KEY,
-    type VARCHAR NOT NULL,
-    book_id INT REFERENCES book(id) ON DELETE SET NULL,
-    autor_id INT REFERENCES autor(id) ON DELETE SET NULL
-);
-
--- -- BOOKS by AUTOR: a join table
--- CREATE TABLE autor_books(
---     id SERIAL PRIMARY KEY,
---     autor_id INT REFERENCES autor(id) ON DELETE SET NULL,
---     book_id INT REFERENCES book(id) ON DELETE CASCADE
--- );
-
--- BOOKS by USER: a join table
-CREATE TABLE user_books(
-    id SERIAL PRIMARY KEY,
-    autor_id INT REFERENCES autor(id) ON DELETE SET NULL,
-    user_id INT REFERENCES users(id) ON DELETE SET NULL
+    genre VARCHAR NOT NULL,
 );
 
 -- TYPES OF BOOKS 
 CREATE TABLE types_book(
     id SERIAL PRIMARY KEY,
     type VARCHAR NOT NULL,
-    book_id INT REFERENCES book(id) ON DELETE SET NULL
 );
 
 -- REVIEWS 
@@ -75,14 +61,14 @@ CREATE TABLE reviews(
     book_id INT REFERENCES book(id) ON DELETE SET NULL
 );
 
-CREATE TABLE reading_process(
-    id SERIAL PRIMARY KEY,
-    finished BOOLEAN,
-    reading BOOLEAN,
-    untouched BOOLEAN,
-    book_id INT REFERENCES book(id) ON DELETE SET NULL,
-    user_id INT REFERENCES users(id) ON DELETE SET NULL 
-);
+-- CREATE TABLE reading_process(
+--     id SERIAL PRIMARY KEY,
+--     finished BOOLEAN,
+--     reading BOOLEAN,
+--     untouched BOOLEAN,
+--     book_id INT REFERENCES book(id) ON DELETE SET NULL,
+--     user_id INT REFERENCES users(id) ON DELETE SET NULL 
+-- );
 
 -- FAVORITE LIST
 CREATE TABLE fav(
