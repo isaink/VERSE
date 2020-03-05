@@ -27,3 +27,16 @@ While it appears to be a useless addition to a folder, a .DS_Store file (the “
     `CleanMyMac X ` is designed to rid your system of junk files with minimum fuss to ensure your Mac runs exactly how you like it. Download it now to keep folders and files working seamlessly. is designed to rid your system of junk files with minimum fuss to ensure your Mac runs exactly how you like it. Download it now to keep folders and files working seamlessly.
 
 Is best & FREE to delete it using the Terminal Command line `rm .DS_Store`
+
+
+## About API documentations
+Creating a smooth and enjoyable experience for those implementing your APIs is essential with just how much competition there is nowadays, and API documentation is one of the keys to success.
+
+
+ Five-part checklist of documentation basics:
+
+Authentication guide ☐
+Quickstart guide ☐
+Endpoint definitions ☐
+Code snippets ☐
+Example responses ☐
