@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 
-import Home from './components/Home/homepage.js'
-import Nav from './components/NavBars/Nav.js'
+import Home from './Components/Home/homepage.js'
+import Nav from './Components/NavBars/Nav.js'
 
 function App() {
   return (

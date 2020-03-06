@@ -45,3 +45,15 @@ Example responses ☐
 installing dependencies:
 npm i react-router-dom
 yarn add react-router-dom
+
+
+
+-----
+## Redux
+Logger: for action be visible in developer console when dispatched.
+A thunk is a function that wraps an expression to delay its evaluation.
+
+
+A thunk is a subroutine used to inject an additional calculation into another subroutine. Thunks are primarily used to delay a calculation until its result is needed, or to insert operations at the beginning or end of the other subroutine.
+
+The term originated as a humorous past participle of "think". That is, a "thunk value" becomes available after its calculation routine is thought through, or executed.
