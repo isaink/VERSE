@@ -1,4 +1,25 @@
 import React, { Component } from "react";
-// import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 
-export default class Navbar extends Component {}
+import icon_verse from '../../img/icon_verse.svg'
+
+export default class Navbar extends Component {
+    render(){
+        return(
+            <>
+            <span className="dashing_logo">
+                <Link to={"/"}>
+                <img
+                    src={icon_verse}
+                    alt=""
+                    width="175px"
+                    height="auto"
+                    // onClick={this.scrollToTop}
+                />
+                </Link>
+            </span>
+            </>
+        )
+    }
+};
