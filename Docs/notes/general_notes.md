@@ -40,3 +40,8 @@ Quickstart guide ☐
 Endpoint definitions ☐
 Code snippets ☐
 Example responses ☐
+
+
+installing dependencies:
+npm i react-router-dom
+yarn add react-router-dom
